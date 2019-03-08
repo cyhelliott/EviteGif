@@ -58,7 +58,7 @@ class GifSearchFragment : Fragment() {
     }
 
     /**
-     * Sets observer for ViewModel
+     * sets observer for ViewModel
      */
     private fun setViewModelObserver() {
         viewModel.gifList.observe(this, Observer<ArrayList<String>> { price: ArrayList<String>? ->
@@ -68,7 +68,7 @@ class GifSearchFragment : Fragment() {
     }
 
     /**
-     * Sets listeners
+     * sets listeners
      */
     private fun setListener() {
         btn_search.setOnClickListener { v: View ->

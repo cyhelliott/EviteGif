@@ -49,10 +49,10 @@ class GifSearchAdapter(context: Context) : RecyclerView.Adapter<GifSearchAdapter
     }
 
     /**
-     * set the gif list data and
+     * set the gif list data and invalidate
      */
-    fun setDataInvalidate(alGif: ArrayList<String>) {
-        this.alGif = alGif
+    fun setDataInvalidate(gifArray: ArrayList<String>) {
+        alGif = gifArray
         notifyDataSetChanged()
     }
 

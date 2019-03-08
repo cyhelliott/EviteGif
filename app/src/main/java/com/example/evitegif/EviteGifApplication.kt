@@ -2,7 +2,6 @@ package com.example.evitegif
 
 import android.app.Application
 import com.giphy.sdk.core.network.api.GPHApiClient
-import com.squareup.leakcanary.LeakCanary
 
 class EviteGifApplication : Application() {
     companion object {
