@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.GifSearchFragment"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="1">
+
+        <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="wrap_content"
+                android:hint="Search for a gif here!"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+        />
+
+        <Button android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Search"
+        />
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_gif_display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:layout_weight=".6">
+            />
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</FrameLayout>
